@@ -25,8 +25,7 @@ class Waiter
   end
  
   def best_tipper 
-    Meal.all select do ||
-      meal.person == self 
+    Meal.all.max 
     end 
   end 
  
