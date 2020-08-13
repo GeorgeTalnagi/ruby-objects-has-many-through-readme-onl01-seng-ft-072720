@@ -25,7 +25,7 @@ class Waiter
   end
  
   def best_tipper 
-    Customer.all select do |person|
+    Meal.all select do |person|
       meal.person == self 
     end 
   end 
