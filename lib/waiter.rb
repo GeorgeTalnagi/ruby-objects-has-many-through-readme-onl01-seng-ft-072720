@@ -26,7 +26,7 @@ class Waiter
  
   def best_tipper 
     Meal.all.max do |highest_tip_meal|
-      return 
+      return highest_tip_meal.customer 
     end 
   end 
  
